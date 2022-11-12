@@ -27,6 +27,7 @@
 			<c:forEach items="${boardList }" var="board">
 				<tr>
 					<td>${board.seq }</td>
+					<!--  글 제목을 클릭했을 때 게시글을 확인하기 위해서는 getBoard.do 요청이 수행되어야 하며 파라미터로 글 번호를 가져간다.  -->
 					<td align="left"><a href="getBoard.do?seq=${board.seq }">
 							${board.title }</a></td>
 					<td>${board.writer }</td>

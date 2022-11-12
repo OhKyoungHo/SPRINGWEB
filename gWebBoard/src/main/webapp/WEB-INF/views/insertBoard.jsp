@@ -7,6 +7,7 @@
 <body>
 		<h1>글 등록</h1>		
 		<hr>
+		<!--insertBoard.jsp 에서 새 글 등록 버튼을 클릭했을 때 글이 등록되려면 saveBoard.do 요청이 수행되어야 함을 확인  -->
 		<form action="saveBoard.do" method="get"> <!--  enctype="multipart/form-data" -->
 			<table border="1" cellpadding="0" cellspacing="0">
 				<tr>

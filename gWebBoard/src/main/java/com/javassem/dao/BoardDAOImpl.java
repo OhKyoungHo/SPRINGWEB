@@ -9,9 +9,12 @@ import org.springframework.stereotype.Repository;
 import com.javassem.domain.BoardVO;
 
 @Repository
+// BoardDAOImpl.java 에서 Repository 역할을 하도록 애노테이션을 붙인다. 
 public class BoardDAOImpl implements BoardDAO{
 
 	@Autowired
+	// 클래스 안의 SqlSessionTemplate 이 DB와 연결해주는 커넥션 역할을 한다. 
+    // 해당 클래스의 객체를 스프링 컨테이너에서 연결해주도록 애노테이션을 붙인다. 
 	private SqlSessionTemplate mybatis;
 
 	public void insertBoard(BoardVO vo) {
