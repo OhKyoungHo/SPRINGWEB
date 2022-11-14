@@ -15,6 +15,17 @@
 </head>
 <body>
 		<h1>게시글 목록</h1>
+		<form action='getBoardList.do'>
+		<select name='searchCondition'>
+			<option value='title'>제목</option>
+			<option value='writer'>작성자</option>
+			<option value='content'>내용</option>
+		</select>
+		<input type='text' name='searchKeyword'>
+		<input type='submit' value='search'>
+		</form>
+		
+		
 		
 	<table border="1">
 			<tr>

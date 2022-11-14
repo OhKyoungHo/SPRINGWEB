@@ -4,10 +4,16 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>index.jsp</title>
 </head>
 <body>
 
 <a href='sample.do'>시작</a>
+
+<a href="empSelect.do">EMP 검색1</a>	<br/>
+
+<a href="empDept.do">EMP 검색2</a>	<br/>
+
+
 </body>
 </html>

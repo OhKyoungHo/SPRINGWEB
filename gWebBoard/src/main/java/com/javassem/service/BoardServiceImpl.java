@@ -1,5 +1,6 @@
 package com.javassem.service;
 
+import java.util.HashMap;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,7 +35,7 @@ public class BoardServiceImpl implements BoardService {
 		return boardDAO.getBoard(vo);
 	}
 	//서비스에서 수행하는 getBoardList( ) 메소드는 BoardDAOImpl 의 getBoardList( ) 메소드를 호출한다. 
-	public List<BoardVO> getBoardList() {
-		return boardDAO.getBoardList();
+	public List<BoardVO> getBoardList(HashMap map) {
+		return boardDAO.getBoardList(map);
 	}
 }
