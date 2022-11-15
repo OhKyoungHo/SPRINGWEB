@@ -21,7 +21,7 @@ public class BoardController {
 	private BoardService boardService;
 
 		@RequestMapping("/{step}.do")
-		// @PathVariables 는 URI 경로에서 값을 추출
+		// @PathVariables 는 URL 경로에서 값을 추출
 		public String viewPage(@PathVariable String step) {
 			System.out.println("경로:" + step);
 			return step;
